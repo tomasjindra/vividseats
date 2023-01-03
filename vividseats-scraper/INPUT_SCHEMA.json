@@ -1,0 +1,17 @@
+{
+    "title": "Adding actor input",
+    "description": "Add all values input URLs from which will be collected results",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "inputURLs": {
+            "title": "Input URLs",
+            "description": "The list of input URLs to be used",
+            "type": "array",
+            "editor": "requestListSources"
+        }
+    },
+    "required": [
+        "inputURLs"
+    ]
+}
