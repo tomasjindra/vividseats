@@ -2,11 +2,12 @@ import { CheerioCrawler, ProxyConfiguration } from 'crawlee';
 import { router } from './routes.js';
 import { createUrlEndpoints } from '../utilities/createUrlEndpoints.js';
 import { Actor } from 'apify';
+import {inputURLs} from './INPUT.js'
 
 
 await Actor.init();
 
-const { inputURLs } = await Actor.getInput();
+//const { inputURLs } = await Actor.getInput();
 
 const URLEndpoints = []
 
