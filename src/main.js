@@ -21,13 +21,13 @@ const crawler = new CheerioCrawler({
     //DC proxies solution which has high blocking rate
     // proxyConfiguration: await Actor.createProxyConfiguration({
     //     useApifyProxy: true,
-    //     apifyProxyGroups: ["US"]
+    //     apifyProxyGroups: ["SHADER"]
     // }),
 
-    //maxRequestRetries: 50, // a lot of 429 blocks
-    //useSessionPool: true,
+    // maxRequestRetries: 50, // a lot of 403 blocks
+    // useSessionPool: true,
     // sessionPoolOptions: {
-    //     maxPoolSize: 4,
+    //     //maxPoolSize: 1,
     //     sessionOptions: {
     //         maxUsageCount: 80, // tests show that they start blocking approx after 85th usage.
     //     },

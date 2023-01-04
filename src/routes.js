@@ -13,11 +13,6 @@ router.addDefaultHandler(async ({ enqueueLinks, log, body, json, request, respon
     });
 
 
-
-
-
-
-
     // log.info(`enqueueing new URLs`);
     // await enqueueLinks({
     //     globs: ['https://crawlee.dev/**'],
