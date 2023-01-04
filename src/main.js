@@ -2,7 +2,7 @@ import { CheerioCrawler, ProxyConfiguration } from 'crawlee';
 import { router } from './routes.js';
 import { createUrlEndpoints } from '../utilities/createUrlEndpoints.js';
 import { Actor } from 'apify';
-import {inputURLs} from './INPUT.js'
+import { inputURLs } from './INPUT.js'
 
 
 await Actor.init();
@@ -21,7 +21,7 @@ const crawler = new CheerioCrawler({
     //DC proxies solution which has high blocking rate
     // proxyConfiguration: await Actor.createProxyConfiguration({
     //     useApifyProxy: true,
-    //     apifyProxyGroups: ["SHADER"]
+    //     apifyProxyGroups: ["USA"]
     // }),
 
     // maxRequestRetries: 50, // a lot of 403 blocks
@@ -30,6 +30,7 @@ const crawler = new CheerioCrawler({
     //     //maxPoolSize: 1,
     //     sessionOptions: {
     //         maxUsageCount: 80, // tests show that they start blocking approx after 85th usage.
+    //         maxErrorScore: 3
     //     },
     // },
 
@@ -40,8 +41,6 @@ const crawler = new CheerioCrawler({
     }),
 
 });
-
-
 
 await crawler.run(URLEndpoints);
 await Actor.exit();
